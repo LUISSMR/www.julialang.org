@@ -4,7 +4,7 @@
 
 Before you apply, it's a good idea to get in touch with the Julia community.
 Ask questions on [Discourse](https://discourse.julialang.org) or [join the
-Julia Slack](http://slackinvite.julialang.org/) to get connected with
+Julia Slack](https://julialang.org/slack/) to get connected with
 potential mentors to help find interesting projects. The Slack channel `#jsoc` is
 dedicated to helping students get the help they need. Additionally, you should
 make use of these connections to start making some small contributions and
@@ -24,8 +24,8 @@ _If you have accessibility needs with respect to submitting your application, pl
 Applications are free-form, so you can discuss your project in whatever way you
 feel is best. Our organization does not have page or formatting requirements, but we recommend
 building a formal PDF document of less than 10 pages which is formatted using
-Word or LaTeX. If you have any questions, contact the Julia Language student
-programs administrators at jsoc@julialang.org. We
+Word or LaTeX. If you have any questions that are not answered here, contact the Julia Language student
+programs administrators at `jsoc@julialang.org`. Note that the first step for GSoC is not sending us an email, please refer to the steps above for good first steps. We
 recommend having a mentor to help you with the application process. Please feel
 free to share your draft applications in the `#jsoc` channel of the Slack to
 receive feedback.
@@ -34,14 +34,14 @@ The key questions we will ask ourselves when considering it are:
 
 @@tight-list
 * Is the student committed to the project?
-* Is the plan a reasonable amount to do in three months?
+* Is the plan a reasonable amount to do in the allotted project time?
 * Are there clear milestones we can use to assess progress (it should be easy
   to answer the question "Is the project done?").
-* Is the proposed mentor enthusiastic about the project? 
+* Is the proposed mentor enthusiastic about the project?
 * Does the applicant have previous Open Source contributions (preferably in Julia)?
 @@
 
-Based on analyzing hundreds of GSoC applications, the most common reason(s) someone is __not__ picked for GSoC are:
+__Based on analyzing hundreds of GSoC applications, the most common reason(s) someone is not picked for GSoC are__:
  - The indvidual did not contact the proposed mentor prior to applying. (It is in your best interest to communicate with the proposed mentor as early on as possible. They are your advocate and first point of contact for this program!)
  - No or minimal Open Source Julia contributions. (Given the high quality of applicants each year, we usually choose individuals who have have Julia contributions before GSoC. Start making quality contributions as early on as possible and include links to those in your application.)
 
@@ -81,5 +81,3 @@ In more detail, you may find it useful to consider the following questions:
 * **Logistics.**
   - What other time commitments, such as summer courses, other jobs, planned vacations, etc., will you have over the summer?
 @@
-
-

@@ -102,8 +102,8 @@ Checksums for this release are available in both, [MD5](https://julialang-s3.jul
   <tbody>
     <tr>
       <th> Windows <a href="/downloads/platform/#windows">[help]</a></th>
-      <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x64/{{lts_release_short}}/julia-{{lts_release}}-win64.exe">64-bit</a> </td>
-      <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x86/{{lts_release_short}}/julia-{{lts_release}}-win32.exe">32-bit</a> </td>
+      <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x64/{{lts_release_short}}/julia-{{lts_release}}-win64.exe">64-bit (installer)</a> </td>
+      <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/winnt/x86/{{lts_release_short}}/julia-{{lts_release}}-win32.exe">32-bit (installer)</a> </td>
     </tr>
     <tr>
       <th> macOS <a href="/downloads/platform/#macos">[help]</a></th>
@@ -194,6 +194,14 @@ Checksums for this release are available in both, [MD5](https://julialang-s3.jul
       <td colspan="3"> <!--<a href="https://julialang-s3.julialang.org/bin/linux/armv7l/{{upcoming_release_short}}/julia-{{upcoming_release}}-linux-armv7l.tar.gz">32-bit (ARMv7-a hard float)</a>
                                        (<a href="https://julialang-s3.julialang.org/bin/linux/armv7l/{{upcoming_release_short}}/julia-{{upcoming_release}}-linux-armv7l.tar.gz.asc">GPG</a>) -->
       </td>
+      </td>
+    </tr>
+    <tr>
+      <th> Generic Linux on PowerPC <a href="/downloads/platform/#linux_and_freebsd">[help]</a></th>
+      <td colspan="3"> <a href="https://julialang-s3.julialang.org/bin/linux/ppc64le/{{upcoming_release_short}}/julia-{{upcoming_release}}-linux-ppc64le.tar.gz">64-bit (little endian)</a>
+        (<a href="https://julialang-s3.julialang.org/bin/linux/ppc64le/{{upcoming_release_short}}/julia-{{upcoming_release}}-linux-ppc64le.tar.gz.asc">GPG</a>)
+      </td>
+      <td colspan="3">
       </td>
     </tr>
     <tr>
@@ -349,3 +357,9 @@ The platforms currently supported by Julia are listed below. They are divided in
 </ul>
 ~~~
 @@ @@
+
+
+
+## JSON release feed
+
+The info above is also available as a [JSON file](https://julialang-s3.julialang.org/bin/versions.json) ([schema](https://julialang-s3.julialang.org/bin/versions-schema.json)). The file is updated once every 24 hours.

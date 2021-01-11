@@ -13,7 +13,7 @@ If you know of other classes using Julia for teaching, please consider updating 
 * Brown University
     * [CSCI 1810](https://cs.brown.edu/courses/csci1810/), Computational Molecular Biology (Prof. Benjamin J. Raphael), Fall 2014
 * [Budapest University of Technology and Economics](https://www.bme.hu/)
-    * [Applications of Differential Equations and Vector Analysis for Engineers II.] ([Brigitta Szilágyi](https://sites.google.com/site/brszilagyi/))
+    * Applications of Differential Equations and Vector Analysis for Engineers II ([Brigitta Szilágyi](https://sites.google.com/site/brszilagyi/))
 * City University of New York
     * [MTH 229](https://www.math.csi.cuny.edu/abhijit/229/), Calculus Computer Laboratory (Prof. John Verzani), Spring 2014. Also see the [MTH 229 Projects](https://mth229.github.io) page.
 * Cornell University
@@ -100,6 +100,16 @@ If you know of other classes using Julia for teaching, please consider updating 
     * L0407, [Exercises in Programming I for Mechanical Systems Engineering](https://github.com/hsugawa8651/mseprogOne) (Hiroharu Sugawara): Fall 2018, Fall 2019
 * [TU Dortmund / SFB 823](https://www.statistik.tu-dortmund.de/sfb823.html), Germany
     * One week introductory course into Julia with applications in statistics and economics ([Tileman Conring](https://www.statistik.tu-dortmund.de/conring.html)): Spring 2018
+* Universidad Adolfo Ibáñez, Chile
+   * ING747, Integer programming, Fall 2018-2019 (Diego Morán and Rodolfo Carvajal)
+   * DIIIO06, Advanced linear optimization, Spring 2020 (Diego Morán)
+* Universidad del Norte, Barranquilla, Colombia
+    * [ELP 4076](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ELP&crse_numb_in=4076), Ingeniería de Ríos y Costas (Prof. Germán Rivillas)
+    * [ICI 4083](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ICI&crse_numb_in=4083), Hidráulica (Prof. Germán Rivillas)
+    * [ICI 62016](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ICI&crse_numb_in=62016), Hidráulica Marítima (Prof. Germán Rivillas)
+    * [ICI 62017](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ICI&crse_numb_in=62017), Hidrodinámica (Prof. Germán Rivillas)
+    * [ICI 62019](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ICI&crse_numb_in=62019), Ingeniería Costera (Prof. Germán Rivillas)
+    * [ICI 62022](https://pomelo.uninorte.edu.co/pls/prod/bwckctlg.p_disp_course_detail?cat_term_in=202030&subj_code_in=ICI&crse_numb_in=62022), Tópicos Avanzados de Ingeniería Costera (Prof. Germán Rivillas)
 * Universidad Nacional Autónoma de México
     * [Física computacional](https://github.com/dpsanders/fisica_computacional) (Prof. David P. Sanders), Fall 2014
     * Métodos numéricos para sistemas dinámicos (Prof. Luis Benet), Fall 2014
@@ -135,8 +145,10 @@ If you know of other classes using Julia for teaching, please consider updating 
 *   University of Oulu
     *   Invited [Advanced Julia Workshop](https://github.com/crstnbr/JuliaOulu20) (MSc. Carsten Bauer, University of Cologne), Spring 2020
 * University of South Florida
-    * [ESI 6491](https://www.chkwon.net/teaching/esi-6491/), Linear Programming and Network Optimization (Prof. Changhyun Kwon), Fall 2015
-    * [EIN 6945](https://www.chkwon.net/teaching/ein-6935/), Nonlinear Optimization and Game Theory (Prof. [Changhyun Kwon](https://www.chkwon.net/)), Spring 2016
+    * ESI 4312, Deterministic Operations Research (Prof. Changhyun Kwon), Fall 2017–Fall 2020
+    * ESI 6410, Optimization in O.R. (Prof. Changhyun Kwon), Spring 2021
+    * [ESI 6491](https://www.chkwon.net/teaching/esi-6491/), Linear Programming and Network Optimization (Prof. Changhyun Kwon), Fall 2015–Fall 2020
+    * [EIN 6945](https://www.chkwon.net/teaching/ein-6935/), Nonlinear Optimization and Game Theory (Prof. [Changhyun Kwon](https://www.chkwon.net/)), Spring 2016, 2018, 2020
 * University of Sydney
     * [MATH3076/3976](https://www.maths.usyd.edu.au/u/olver/teaching/MATH3976/), Mathematical Computing (Assoc. Prof. [Sheehan Olver](https://www.maths.usyd.edu.au/u/olver/)), Fall 2016
 * Université Paul Sabatier, Toulouse

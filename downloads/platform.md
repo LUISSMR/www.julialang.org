@@ -65,10 +65,9 @@ To start running Julia from the Terminal, you can do the following:
 
 Navigate to `/usr/local/bin` and remove the `julia` file. Then type the following command:
 
-
-```
-ln -s /Applications/Julia-{{stable_release_short}}.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
-```
+~~~
+<pre><code class="language-shell">ln -s /Applications/Julia-{{stable_release_short}}.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia</code></pre>
+~~~
 
 which creates a symlink to a Julia version (here {{stable_release_short}}) of your choosing.
 Once that is done, you can close the shell profile page and quit Terminal. Now, just simply open Terminal again, type in `julia` in it, and it should run your version of Julia!
@@ -79,10 +78,10 @@ You can uninstall Julia by deleting Julia.app and the packages directory in `~/.
 
 It is strongly recommended that the official generic binaries from the downloads page be used to install Julia on Linux and FreeBSD. The following set of commands downloads the latest version of Julia into a directory named ~~~<code>julia-{{stable_release}}</code>~~~.
 
-```
-wget https://julialang-s3.julialang.org/bin/linux/x64/{{stable_release_short}}/julia-{{ stable_release }}-linux-x86_64.tar.gz
-tar zxvf julia-{{ stable_release }}-linux-x86_64.tar.gz
-```
+~~~
+<pre><code class="language-shell">wget https://julialang-s3.julialang.org/bin/linux/x64/{{stable_release_short}}/julia-{{ stable_release }}-linux-x86_64.tar.gz
+tar zxvf julia-{{ stable_release }}-linux-x86_64.tar.gz</code></pre>
+~~~
 
 ### Running Julia
 
@@ -96,7 +95,7 @@ To run Julia, you can do any of the following:
 
 To add Julia's `bin` folder (with full path) to `PATH` environment variable, you can edit the `~/.bashrc` (or `~/.bash_profile`) file. Open the file in your favourite editor and add a new line as follows:
 
-```
+```shell
 export PATH="$PATH:/path/to/<Julia directory>/bin"
 ```
 
@@ -104,7 +103,9 @@ Apart from this, there are several ways through which you can change environment
 
 Julia installs all its files in a single directory. Deleting the directory where Julia was installed is sufficient. If you would also like to remove your packages, remove `~/.julia`. The startup file is at `~/.julia/config/startup.jl` and the history at `~/.julia/logs/repl_history.jl`.
 
+## Cross-platform installer
 
+[Jill.py](https://github.com/johnnychen94/jill.py) is a community-maintained command-line tool that automates the installation workflow for all platforms. After installing this using `pip install jill -U`, you can then use `jill install` to install the current stable release, and `jill install latest` to install the nightly builds.
 
 # Platform Specific Instructions for Unofficial Binaries
 
@@ -118,7 +119,7 @@ The following distribution-specific packages are community contributed. They may
 
 If you use Chocolatey for package management, you can install the latest Julia release by executing the following one-liner, in either a powershell or command prompt:
 
-```
+```shell
 choco install julia --confirm
 ```
 
@@ -130,7 +131,7 @@ Chocolatey automatically creates a shim for the Julia executable, so you simply 
 
 Julia can be installed using the [Homebrew package manager](https://brew.sh/) as follows:
 
-```
+```shell
 brew cask install julia
 ```
 
@@ -146,15 +147,17 @@ If you are using RHEL, CentOS, Scientific Linux or Oracle Enterprise Linux (vers
 
 If you are using Fedora (version 19 or higher), directly run:
 
-```
+```shell
 sudo dnf copr enable nalimilan/julia
 sudo yum install julia
 ```
 
 If you are using CentOS (version 7 or higher), directly run:
 
+```shell
 sudo yum-config-manager --add-repo https://copr.fedorainfracloud.org/coprs/nalimilan/julia/repo/epel-7/nalimilan-julia-epel-7.repo
 sudo yum install julia
+```
 
 If both `dnf` and `yum-config-manager` are not available for your distribution, download the relevant `.repo` file from the Copr webpage, copy it to `/etc/yum.repos`, and run the second command.
 
@@ -166,14 +169,14 @@ Note that Fedora guidelines advise against uploading new breaking releases to of
 
 Recent Debian/ubuntu distributions include their own build of Julia, which can be installed in the usual way. Check the versions of Julia provided in [Ubuntu](https://packages.ubuntu.com/search?keywords=julia) and [Debian](https://packages.debian.org/search?keywords=julia). If this is not the version of Julia you want, you will need to use the official binaries.
 
-```
+```shell
 sudo apt install julia
 ```
 
 ## Arch Linux
 The Arch User Repository has [a package for Julia](https://aur.archlinux.org/packages/julia-bin) that is built from the official binaries of Julia. To install it run:
 
-```
+```shell
 sudo pacman -S base-devel git
 git clone https://aur.archlinux.org/julia-bin.git
 cd julia-bin
@@ -184,6 +187,6 @@ makepkg -si
 
 Julia is available in the [Ports Collection](https://svnweb.freebsd.org/ports/head/lang/julia/). To install from the FreeBSD binary package manager, `pkg`, run
 
-```
+```shell
 pkg install julia
 ```

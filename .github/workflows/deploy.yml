@@ -22,8 +22,8 @@ jobs:
       - name: Fix URLs for PR preview deployment (pull request previews)
         if: github.event_name == 'pull_request'
         run: |
-          echo "::set-env name=JULIA_FRANKLIN_WEBSITE_URL::https://julialang.netlify.app/previews/PR${{ github.event.number }}/"
-          echo "::set-env name=JULIA_FRANKLIN_PREPATH::previews/PR${{ github.event.number }}"
+          echo "JULIA_FRANKLIN_WEBSITE_URL=https://julialang.netlify.app/previews/PR${{ github.event.number }}/" >> $GITHUB_ENV
+          echo "JULIA_FRANKLIN_PREPATH=previews/PR${{ github.event.number }}" >> $GITHUB_ENV
       - run: echo $JULIA_FRANKLIN_WEBSITE_URL
       - run: echo $JULIA_FRANKLIN_PREPATH
       # Python is necessary for pre-rendering steps as well as to install
@@ -32,7 +32,7 @@ jobs:
       - name: Install python
         uses: actions/setup-python@v1
         with:
-          python-version: '3.x'
+          python-version: '3.8'
       - name: Install Julia
         uses: julia-actions/setup-julia@v1
         with:
@@ -44,10 +44,8 @@ jobs:
       # NOTE: the last line should be `optimize()`, you may want to give it
       # specific arguments, see the documentation or ?optimize in the REPL.
       - name: Build site
-        run: julia -e '
-              using Pkg;
-              Pkg.add("NodeJS");
-              Pkg.add(PackageSpec(name="Franklin",version="0.10"));
+        run: julia --project -e '
+              using Pkg; Pkg.instantiate();
               using NodeJS; run(`$(npm_cmd()) install highlight.js`);
               using Franklin; optimize();
               cp(joinpath("__site", "feed.xml"), joinpath("__site", "index.xml"))'
